@@ -29,4 +29,7 @@ C1 and C2 were written before implementation. C3–C6 were added later so all of
 
 ## Realistic use and final judgment
 
-Not done yet.
+- Task I tried: Planned my Monday 2026-10-26 with `py -3.13 main.py`: added Database Lecture 09:00–10:30, Lunch 12:00–13:00, Computer Systems Lab 10:30–12:00 and Gym 17:00–18:30. Then tried a Club meeting 11:30–12:30, a Meeting 14:00–13:00 and Group work on 2026-02-30, and viewed the day.
+- Outcome: All 4 real events printed "Event added.". The club meeting was rejected for overlapping, and the other two got clear errors instead of crashing. Viewing the day showed Lecture, Lab, Lunch, Gym in time order even though I added the lab after lunch. Useful for quickly seeing one day and stopping double-booking.
+- Judgment: Done. R1–R3 all work in the manual checks C1–C6 and all 6 automated tests pass.
+- Remaining limitation or unfinished work: Events are not saved, so everything is lost when I quit. Also the overlap error doesn't say which event it clashes with, so on a busy day I have to view the date to find it.
