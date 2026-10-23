@@ -16,10 +16,12 @@ MySchedule is a small command-line schedule manager for students who want to org
 
 - Prerequisites: Python 3.13 or later. Only the standard library is used, nothing to install.
 - Setup: Clone the repo and go into the folder.
+
   ```
   git clone https://github.com/milinisworking/ICCS_IA5.1_Milin_Amo_MySchedule.git
-  cd myschedule
+  cd ICCS_IA5.1_Milin_Amo_MySchedule
   ```
+
 - Run: `py -3.13 main.py` (or `python main.py` if Python 3.13 is your default)
   - Choose `1` to add an event, then type the title, date, start and end time, e.g. `Database Lecture`, `2026-10-26`, `09:00`, `10:30`.
   - Choose `2` and type a date to see that day's events.
