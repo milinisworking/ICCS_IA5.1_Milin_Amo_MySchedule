@@ -14,17 +14,17 @@ MySchedule is a small command-line schedule manager for students who want to org
 
 ## Setup and use
 
-- Prerequisites: Python 3.13 or later. Only the standard library is used.
-- Setup / Run / Run tests: Clone the repo and go into the folder.
+- Prerequisites: Python 3.13 or later. Only the standard library is used, nothing to install.
+- Setup: Clone the repo and go into the folder.
   ```
   git clone <repo-url>
   cd myschedule
   ```
-  Run: `py -3.13 main.py` (or `python main.py` if Python 3.13 is your default)
+- Run: `py -3.13 main.py` (or `python main.py` if Python 3.13 is your default)
   - Choose `1` to add an event, then type the title, date, start and end time, e.g. `Database Lecture`, `2026-10-26`, `09:00`, `10:30`.
   - Choose `2` and type a date to see that day's events.
   - Choose `3` to quit. Events are only kept while the program is running.
-    Run tests: `py -3.13 -m unittest -v`
+- Run tests: `py -3.13 -m unittest -v`
 
 ## Author and acknowledgements
 
