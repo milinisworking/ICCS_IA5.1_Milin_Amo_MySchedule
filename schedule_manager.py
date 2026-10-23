@@ -81,3 +81,9 @@ class Schedule:
         event = Event(title=title.strip(), date=parsed_date, start=parsed_start, end=parsed_end)
         self.events.append(event)
         return event
+
+    def events_on(self, date_text: str) -> list[Event]:
+        """Return all events for a date, sorted by start time."""
+        target_date = parse_date(date_text)
+        matching_events = [event for event in self.events if event.date == target_date]
+        return sorted(matching_events, key=lambda event: (event.start.hour, event.start.minute))
