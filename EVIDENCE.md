@@ -22,7 +22,10 @@ C1 and C2 were written before implementation. C3–C6 were added later so all of
 
 ## Automated tests
 
-Not done yet.
+- Test file and behaviour checked: `test_schedule_manager.py` — add and view an event (C1), end time before start rejected (C2), events sorted by start time (C3), invalid date 2026-02-30 rejected (C4), overlapping event rejected (C5), touching events 09:00–10:30 and 10:30–11:00 both allowed (C6).
+- Command I ran: `py -3.13 -m unittest -v`
+- Final result: Ran 6 tests, OK (all passed).
+- Correction and rerun, if needed: None needed. I checked each assertion matched my expected results before running.
 
 ## Realistic use and final judgment
 
