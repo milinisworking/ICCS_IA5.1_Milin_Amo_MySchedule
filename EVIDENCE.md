@@ -18,7 +18,7 @@ C1 and C2 were written before implementation. C3–C6 were added later so all of
 ## Two review decisions
 
 - Plan decision: I chose a command-line program instead of a graphical calendar because it is easier to finish and test within the assignment time. I also decided that events that only touch (one ends 10:30, next starts 10:30) are allowed, because back-to-back classes are normal for students.
-- Code decision: Not yet.
+- Code decision: In `schedule_manager.py`, Copilot's `Event` dataclass had no `__str__`, so printing an event showed the raw dataclass text (`Event(title='Database Lecture', date=datetime.date(...)...)`) instead of `09:00-10:30  Database Lecture` like I expected in C1. I added `Event.__str__` and `.strip()` in `parse_date()`/`parse_time()`, because a stray space like " 09:00" was rejected as an invalid time. I kept Copilot's empty-title check in `Event.__post_init__` since it already covers that case.
 
 ## Automated tests
 
