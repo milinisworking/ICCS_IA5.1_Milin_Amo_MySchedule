@@ -17,7 +17,7 @@ MySchedule is a small command-line schedule manager for students who want to org
 - Prerequisites: Python 3.13 or later. Only the standard library is used, nothing to install.
 - Setup: Clone the repo and go into the folder.
   ```
-  git clone <repo-url>
+  git clone https://github.com/milinisworking/ICCS_IA5.1_Milin_Amo_MySchedule.git
   cd myschedule
   ```
 - Run: `py -3.13 main.py` (or `python main.py` if Python 3.13 is your default)
