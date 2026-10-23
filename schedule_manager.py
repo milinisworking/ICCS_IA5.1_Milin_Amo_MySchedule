@@ -77,6 +77,14 @@ class Schedule:
             raise ScheduleError("Event start time must be a valid time value.")
         if not isinstance(parsed_end, time):
             raise ScheduleError("Event end time must be a valid time value.")
+        if parsed_end <= parsed_start:
+            raise ScheduleError("End time must be after the start time.")
+
+        for existing in self.events:
+            if existing.date != parsed_date:
+                continue
+            if parsed_start < existing.end and existing.start < parsed_end:
+                raise ScheduleError("This event overlaps another event on the same date.")
 
         event = Event(title=title.strip(), date=parsed_date, start=parsed_start, end=parsed_end)
         self.events.append(event)
